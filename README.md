@@ -11,5 +11,6 @@ developed this little challenge for you.
 * Run `bundle install` to install RSpec
 * Make the specs pass by writing new code in `/lib` or (if necessary) updating the test
   code
-* When you're done send an email to `apprentice@devmynd.com` with a link
+* When you're done send an email to
+  [apprenticeship@devmynd.com](mailto:apprenticeship@devmynd.com) with a link
   to your forked repository
