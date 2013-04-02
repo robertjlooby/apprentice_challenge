@@ -3,7 +3,6 @@ require "spec_helper"
 describe "Strings" do
 
   it "reverses a string" do
-    # Fix this broken spec
     expect("Reverse me").to eq("em esreveR")
   end
 
@@ -21,7 +20,6 @@ end
 
 describe "Equality" do
 
-  # Make your code changes in lib/ruby_api.rb
   it "should be comparable" do
     fish1 = Fish.new("Red")
     fish2 = Fish.new("Blue")
