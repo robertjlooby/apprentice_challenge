@@ -1,4 +1,5 @@
 require "spec_helper"
+require_relative "../lib/calculator.rb"
 
 describe 'Calculator' do
 
@@ -39,7 +40,7 @@ describe 'Calculator' do
 
   describe 'extra credit' do
     context 'fluent interface' do
-      xit 'can chain operations together' do
+      it 'can chain operations together' do
         calc = Calculator.new
         expect(calc.input(37).subtract(14).equal).to eq(23)
         expect(calc.input(37).add(14).equal).to eq(51)
@@ -49,7 +50,7 @@ describe 'Calculator' do
     describe 'base 4 calculator' do
       let(:calc) { Calculator.new(base: 4) }
 
-      xit 'defaults to base 10' do
+      it 'defaults to base 10' do
         expect(calc.base).to eq(4)
       end
 

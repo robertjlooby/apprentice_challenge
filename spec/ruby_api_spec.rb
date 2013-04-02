@@ -1,4 +1,5 @@
 require "spec_helper"
+require_relative "../lib/ruby_api.rb"
 
 describe "Strings" do
 
