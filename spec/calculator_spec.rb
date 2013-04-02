@@ -54,7 +54,7 @@ describe 'Calculator' do
         expect(calc.base).to eq(4)
       end
 
-      xit 'can add two numbers' do
+      it 'can add two numbers' do
         calc.input(3)
         calc.add(1)
         expect(calc.equal).to eq(10)
