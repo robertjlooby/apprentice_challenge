@@ -1,18 +1,8 @@
 class Calculator
 	attr_reader :base
-	def initialize(*args)
+	def initialize(base: 10)
 		# Defaults to base 10
-		@base = 10
-		# If there are args to initialize, 
-		# and one of them is {base: ##}, use 
-		# that as the base for the calculator
-		unless args.nil?
-			args.each do |a|
-				if a.is_a?(Hash) && !a[:base].nil?
-					@base = a[:base].to_i
-				end
-			end
-		end
+		@base = base
 		# Current value stored internally in base 10
 		@val = 0
 		# Keeps track of the last method 
